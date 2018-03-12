@@ -8,7 +8,8 @@ $(document).ready(function() {
     var body = $('#body').val();
     var entry = new Entry(title, body);
     // console.log("the title is" + entry['title']);
-    $('#entries').append("<h2>" + entry['title'] + "</h2>");
+    $('#entries').append("<h2>" + entry.title + "</h2>");
     $('#entries').append("<p>" + entry.body + "</p>");
+    $('#entries').append("<p>" + entry.wordCount() + " words.</p>");
   });
 });
