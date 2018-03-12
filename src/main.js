@@ -10,6 +10,6 @@ $(document).ready(function() {
     // console.log("the title is" + entry['title']);
     $('#entries').append("<h2>" + entry.title + "</h2>");
     $('#entries').append("<p>" + entry.body + "</p>");
-    $('#entries').append("<p>" + entry.wordCount() + " words.</p>");
+    $('#entries').append("<p>" + entry.wordCount() + " words, " + entry.vowelCount() + " vowels</p>");
   });
 });
