@@ -34,13 +34,12 @@ Entry.prototype.consCount = function() {
   return consNum;
 };
 
-Entry.prototype.firstSentence = function() {
-  var lower = this.body.toLowerCase();
-  var sentences = lower.split(". ");
+Entry.prototype.getTeaser = function() {
+  var sentences = this.body.split(". ");
   var firstSentence = sentences[0];
   if (firstSentence.split(" ").length > 8)
   {
-    firstSentence = firstSentence.split(" ").slice(0, 8).join(" ");
+    firstSentence = firstSentence.split(" ").slice(0, 8).join(" ") + "...";
   }
   return firstSentence;
 }

@@ -1,3 +1,11 @@
 body {
   background-color: pink;
 }
+
+.expand:hover {
+  cursor: pointer;
+}
+
+.j-body {
+  display: none;
+}
